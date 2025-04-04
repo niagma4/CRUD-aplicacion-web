@@ -7,7 +7,7 @@ const app = express()
 app.use(morgan('dev'))
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
+  res.send('Hola mundo')
 })
 
 app.listen(port, () => {
