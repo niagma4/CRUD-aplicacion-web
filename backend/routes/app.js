@@ -7,9 +7,9 @@ const app = express()
 app.use(morgan('dev'))
 
 app.get('/', (req, res) => {
-  res.send('Hola mundo')
+  res.send('Hola mundo!')
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Servidor lanzado en el puerto ${port}`)
 })
